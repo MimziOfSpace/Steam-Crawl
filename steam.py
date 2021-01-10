@@ -73,6 +73,18 @@ def set_cache( source ) :
 
 def create_css() :
 
+	'''
+	#workskin {
+	font-family : Open Sans;
+ 	font-size : 25.6px;
+	font-style : normal;
+	font-weight : 400;
+	color : #555555;	}
+	.userstuff p {
+	line-height : 51.2px;
+	word-spacing : 3px; }
+	'''
+
 	if not os.path.exists('steam.css') :
 		css = ''
 		css = css + 'body\n{\n\tbackground-color : #F0F0F0; font-family : monospace;\n}\n\n'
@@ -83,6 +95,8 @@ def create_css() :
 		css = css + '.mint { color : #00BB00; }\n'
 		css = css + '.blue { color : #0000BB; }\n'
 		css = css + '.dark { color : #000000; }'
+		css = css + '#workskin { font-family: Open Sans; font-size: 25.6px; font-style: normal; font-weight: 400; color: #555555; }'
+		css = css + '.userstuff p { line-height: 51.2px; word-spacing: 3px; }'
 		usave('steam.css',css)
 
 def get_missing_icons() :
